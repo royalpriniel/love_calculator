@@ -23,7 +23,7 @@ const LoveCalculator = () => {
       margin: '20px auto'
     }}>
       <h2>Chance & Permutations</h2>
-      <p style={{ fontSize: '1.3rem', color: '#666' }}>
+      <p style={{ fontSize: '3rem', color: '#666' }}>
         <em>
           This app is about making fun with computer chance. Who knows whether 
           God can speak to you through it. However, it is merely based on computer 

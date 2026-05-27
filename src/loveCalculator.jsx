@@ -6,11 +6,14 @@ const LoveCalculator = () => {
   const [score, setScore] = useState(null);
 
   const generateScore = (e) => {
-    e.preventDefault();
-    // Generates a random number between 1 and 100
-    const newScore = Math.floor(Math.random() * 100) + 1;
-    setScore(newScore);
-  };
+  e.preventDefault();
+  const newScore = Math.floor(Math.random() * 100) + 1;
+
+  setYourName(prev => prev.trim().replace(/\b\w/g, char => char.toUpperCase()));
+  setHerName(prev => prev.trim().replace(/\b\w/g, char => char.toUpperCase()));
+
+  setScore(newScore);
+};
 
   return (
     <div style={{ 
@@ -42,7 +45,7 @@ const LoveCalculator = () => {
             style={{ padding: '8px', borderRadius: '5px', border: '1px solid #ccc' }}
           />
         </div>
-        
+
         <div style={{ marginBottom: '10px' }}>
           <input 
             type="text" 
@@ -88,3 +91,4 @@ const LoveCalculator = () => {
 };
 
 export default LoveCalculator;
+

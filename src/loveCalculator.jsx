@@ -9,8 +9,8 @@ const LoveCalculator = () => {
   e.preventDefault();
   const newScore = Math.floor(Math.random() * 100) + 1;
 
-  setYourName(prev => prev.trim().replace(/\b\w/g, char => char.toUpperCase()));
-  setHerName(prev => prev.trim().replace(/\b\w/g, char => char.toUpperCase()));
+  setYourName(prev => prev.trim().toLowerCase().replace(/\b\w/g, char => char.toUpperCase()));
+  setHerName(prev => prev.trim().toLowerCase().replace(/\b\w/g, char => char.toUpperCase()));
 
   setScore(newScore);
 };
